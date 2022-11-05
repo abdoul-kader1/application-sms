@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCsIZEc8lPxzkN4d1Nl3Faqd4W5S-4ZnYU',
-    appId: '1:222221991409:android:c436fc5e73f24391e6d850',
+    appId: '1:222221991409:android:c6cad6244b117adae6d850',
     messagingSenderId: '222221991409',
     projectId: 'application-sms-914f7',
     databaseURL: 'https://application-sms-914f7-default-rtdb.firebaseio.com',
@@ -60,7 +60,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBlC3wabsGsYG0D54_jyIs2dnlSkB0Fvr8',
-    appId: '1:222221991409:ios:c595718a9c2ed4a2e6d850',
+    appId: '1:222221991409:ios:a92b487b73b50fc3e6d850',
     messagingSenderId: '222221991409',
     projectId: 'application-sms-914f7',
     databaseURL: 'https://application-sms-914f7-default-rtdb.firebaseio.com',

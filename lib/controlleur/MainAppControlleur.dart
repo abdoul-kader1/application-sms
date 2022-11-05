@@ -1,4 +1,5 @@
-import 'package:application_sms/FIerbaseHelper/FirebaseHelper.dart';
+//import 'package:application_sms/FIerbaseHelper/FirebaseHelper.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 
 class MainAppControlleur extends StatefulWidget {
@@ -67,12 +68,19 @@ class _MainAppControlleurState extends State<MainAppControlleur> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        onPressed:(){
-          FirebaseHelper().enregistrementFirebase(email: "boiteamessage3@gmail.com", mdp:'88691428Kas', nom: "Lil3", prenom:"Yao3").then((user){
-            print(user!.uid);
-          }).catchError((erreur){
-            print(erreur.toString());
-          });
+        onPressed:()async{
+          try {
+            DatabaseReference ref = FirebaseDatabase.instance.ref("users/123");
+            await ref.set({
+              "name": "John",
+              "age": 18,
+              "address": {
+                "line1": "100 Mountain View"
+              }
+            });
+          } catch(e) {
+            print(e);
+          }
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),

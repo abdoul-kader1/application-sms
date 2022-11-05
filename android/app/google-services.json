@@ -8,7 +8,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:222221991409:android:c436fc5e73f24391e6d850",
+        "mobilesdk_app_id": "1:222221991409:android:c6cad6244b117adae6d850",
         "android_client_info": {
           "package_name": "com.example.application_sms"
         }
@@ -30,6 +30,13 @@
             {
               "client_id": "222221991409-34v2p3a85ha6k1ihs0m5k9clpqkjgq6g.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "222221991409-lvdng4ck08i8ujbehk45nju1mogs4j4b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.applicationSms"
+              }
             }
           ]
         }
