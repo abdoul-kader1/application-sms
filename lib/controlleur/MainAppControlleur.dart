@@ -70,7 +70,7 @@ class _MainAppControlleurState extends State<MainAppControlleur> {
       floatingActionButton: FloatingActionButton(
         onPressed:()async{
           try {
-            DatabaseReference ref = FirebaseDatabase.instance.ref("users/123");
+            DatabaseReference ref = FirebaseDatabase.instance.ref("Users/123");
             await ref.set({
               "name": "John",
               "age": 18,
